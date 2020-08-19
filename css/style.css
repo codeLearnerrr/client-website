@@ -3,9 +3,9 @@ body {
 }
 
 header {
-    height         : 100vh;
-    background     : linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(../media_content/images/pexels-daniel-xavier-1102343.jpg) fixed center no-repeat;
-    background-size: cover;
+    height             : 100vh;
+    background         : linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(../media_content/images/pexels-daniel-xavier-1102343.jpg) fixed center no-repeat;
+    background-size    : cover;
     background-position: 50% 50%;
 }
 
@@ -13,25 +13,53 @@ header {
 .nav-menu {
     background: transparent;
 }
-
+/* 
 .nav-menu:hover {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8));
-}
+} */
 
 .custom-align-center {
-    position: absolute;
-    color   : white;
+    position : relative;
+    transform: translateX(0%);
+}
+
+.custom-navbar {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    box-shadow: 5px 2px 15px #444;
+    color     : black;
 }
 
 /* end of navbar */
 /* banner */
-.banner{
+.banner {
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top     : 40%;
+    left    : 15%;
 }
-.display-2{
-    font-size: 1.3rem;
+
+.display-2 {
+    font-size  : 1.3rem;
     font-weight: 500;
 }
+
+.contact-button {
+    border-radius: 25px;
+}
+
 /* end of banner */
+/* services */
+.services-section {
+    padding: 2.5em 0;
+}
+.section-title{
+    padding-bottom: 20px;
+}
+.service{
+    padding: 30px;
+}
+.icon-column{
+    height:50px;
+    width: 50px;
+    border: 2px solid black;
+}
+/* end of services */
