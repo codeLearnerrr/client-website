@@ -13,6 +13,7 @@ header {
 .nav-menu {
     background: transparent;
 }
+
 /* 
 .nav-menu:hover {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8));
@@ -48,18 +49,37 @@ header {
 
 /* end of banner */
 /* services */
-.services-section {
-    padding: 2.5em 0;
+.services-title {
+    padding-top  : 6rem;
+    margin-bottom: 8rem;
+    font-size    : 2rem;
 }
-.section-title{
-    padding-bottom: 20px;
+
+.services-card {
+    box-shadow: 2px 5px 15px #c8cecf;
+    transition: all .5s ease-in-out;
 }
-.service{
-    padding: 30px;
+
+.services-card:hover {
+    box-shadow: 7px 10px 50px rgb(197, 197, 197);
+    transform : translateY(-10px);
 }
-.icon-column{
-    height:50px;
-    width: 50px;
-    border: 2px solid black;
-}
+
 /* end of services */
+/* about me */
+.about-section {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.about-title::after {
+    content   : "";
+    position  : absolute;
+    bottom    : 0;
+    left      : 2%;
+    height    : 2px;
+    background: #207561;
+    width     : 50px;
+}
+
+/* end of about me */
