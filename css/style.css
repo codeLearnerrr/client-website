@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -68,8 +72,8 @@ header {
 /* end of services */
 /* about me */
 .about-section {
-    margin-top: 5rem;
-    position: relative;
+    padding-top: 5rem;
+    position   : relative;
 }
 
 .about-title::after {
@@ -82,4 +86,22 @@ header {
     width     : 50px;
 }
 
+.btn-css {
+    border: 1px solid transparent;
+    font-size       : 15px;
+    padding         : 10px 30px;
+    border-radius   : 30px;
+}
+
+.btn-css.contact-btn {
+    background-color: #207561;
+    border-color    : #207561;
+    color           : white;   
+}
 /* end of about me */
+/* portfolio */
+.portfolio-title{
+    padding-top: 5rem;
+    font-size: 2rem;
+}
+/* end of portfolio */
