@@ -87,21 +87,55 @@ header {
 }
 
 .btn-css {
-    border: 1px solid transparent;
-    font-size       : 15px;
-    padding         : 10px 30px;
-    border-radius   : 30px;
+    border       : 1px solid transparent;
+    font-size    : 15px;
+    padding      : 10px 30px;
+    border-radius: 30px;
 }
 
 .btn-css.contact-btn {
     background-color: #207561;
     border-color    : #207561;
-    color           : white;   
+    color           : white;
 }
+
 /* end of about me */
 /* portfolio */
-.portfolio-title{
+.portfolio-title {
     padding-top: 5rem;
-    font-size: 2rem;
+    font-size  : 2rem;
 }
+
+.img-wrapper img {
+    border-radius: 4px;
+}
+
+.section-title {
+    position      : relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content   : "";
+    position  : absolute;
+    bottom    : 0;
+    left      : 0;
+    height    : 2px;
+    background: #207561;
+    width     : 50px;
+}
+
+.section-title.text-center::after {
+    left             : 50%;
+    /* -webkit-transform: translateX(-50%); */
+    /* -ms-transform    : translateX(-50%); */
+    transform        : translateX(-50%);
+}
+
+.section-title.text-center::after {
+    background: #fff;
+}
+.carousel-inner > .carousel-item > img{
+    margin:auto;
+    }
 /* end of portfolio */
