@@ -4,11 +4,13 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 header {
     height             : 100vh;
-    background         : linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(../media_content/images/pexels-daniel-xavier-1102343.jpg) fixed center no-repeat;
+    background         : linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(../media_content/images/pexels-daniel-xavier-1102343.jpg) fixed center no-repeat;
     background-size    : cover;
     background-position: 50% 50%;
 }
@@ -126,16 +128,59 @@ header {
 }
 
 .section-title.text-center::after {
-    left             : 50%;
+    left                : 50%;
     /* -webkit-transform: translateX(-50%); */
     /* -ms-transform    : translateX(-50%); */
-    transform        : translateX(-50%);
+    transform           : translateX(-50%);
 }
 
 .section-title.text-center::after {
     background: #fff;
 }
-.carousel-inner > .carousel-item > img{
-    margin:auto;
-    }
+
+.carousel-inner>.carousel-item>img {
+    margin: auto;
+}
+
+.carousel-indicators>li {
+    border-radius: 50%;
+    width        : 9px;
+    height       : 9px;
+}
+
 /* end of portfolio */
+
+/* contact */
+.input {
+    background   : transparent;
+    border-color : transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0%;
+    transition   : all .8s;
+}
+
+.input:focus {
+    background   : transparent;
+    border-color : transparent;
+    box-shadow   : none;
+    color        : black;
+    border-bottom: 2px solid #f5593d;
+}
+
+
+.label {
+    position: absolute;
+    color      : #000;
+    display    : block;
+    margin-top : -70px;
+    margin-left: 4px;
+    font-size  : 13px;
+    transition : all .3s;
+}
+
+.input:placeholder-shown+.label {
+    transform : translate(20px, 20px);
+    opacity   : 0;
+    visibility: hidden;
+}
+/* end of contact */
