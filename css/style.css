@@ -64,6 +64,7 @@ header {
     padding-top  : 6rem;
     margin-bottom: 8rem;
     font-size    : 2rem;
+    font-weight  : 500;
 }
 
 .services-card {
@@ -96,6 +97,7 @@ header {
 .btn-css {
     border       : 1px solid transparent;
     font-size    : 15px;
+    font-weight  : 400;
     padding      : 10px 30px;
     border-radius: 30px;
 }
@@ -121,7 +123,10 @@ header {
 /* portfolio */
 .portfolio-title {
     padding-top: 5rem;
-    font-size  : 2rem;
+    position      : relative;
+    padding-bottom: 20px;
+    font-size     : 2rem;
+    font-weight   : 500;
 }
 
 .portfolio-color {
@@ -138,6 +143,8 @@ header {
 .section-title {
     position      : relative;
     padding-bottom: 20px;
+    font-size     : 2rem;
+    font-weight   : 500;
 }
 
 .section-title::after {
