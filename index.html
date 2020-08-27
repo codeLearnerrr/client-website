@@ -17,9 +17,12 @@
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+  
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- css scss-->
+  <link rel="stylesheet" href="css/scss/styles.css">
+  
   <title>Helena Barros</title>
 </head>
 
@@ -64,9 +67,9 @@
   </header>
   <!-- end of header -->
   <!-- services -->
-  <section id="services">
+  <section id="services" class="site-section">
     <div class="container">
-      <h1 class="services-title text-center font-weight-bold">Meus serviços</h1>
+      <h1 class="section-title text-center font-weight-bold">Meus serviços</h1>
       <div class="row">
         <div class="col-sm-6 mb-4">
           <div class="services-card d-flex align-items-center p-3">
@@ -312,7 +315,7 @@
   <!-- contact -->
   <section id="contact">
     <div class="container">
-      <div class="row">
+      <div class="row pt-5">
         <div class="col-sm-6">
           <h3 class="mb-5 text-left pt-5 font-weight-bolder" style="font-size: 3rem;">Me envie uma mensagem</h3>
         </div>
@@ -364,19 +367,6 @@
     </div>
   </footer>
   <!-- end of footer -->
-  <!-- maps api -->
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      var uluru = { lat: -19.919054, lng: -43.938624 };
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 18, center: uluru });
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({ position: uluru, map: map });
-    }
-  </script>
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFuu3ziw5Ow4QI8ASz4s0TyktPpv3kI4I&callback=initMap">
     </script>

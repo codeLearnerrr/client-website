@@ -6,12 +6,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+/* 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size  : 1rem;
     font-weight: 400;
-}
+} */
 
 header {
     height             : 100vh;
@@ -61,10 +61,10 @@ header {
 /* end of banner */
 /* services */
 .services-title {
-    padding-top  : 6rem;
+    /* padding-top  : 6rem;
     margin-bottom: 8rem;
     font-size    : 2rem;
-    font-weight  : 500;
+    font-weight  : 500; */
 }
 
 .services-card {
