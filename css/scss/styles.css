@@ -51,4 +51,108 @@ body:after {
 .site-section {
   padding: 5em 0;
 }
+
+.btns {
+  background-color: #0b4796;
+  border-color: #0b4796;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+}
+
+.btns:hover {
+  background-color: #000;
+}
+
+.btns:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.service-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+.services-card {
+  -webkit-box-shadow: 2px 5px 15px #c8cecf;
+          box-shadow: 2px 5px 15px #c8cecf;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.services-card:hover {
+  -webkit-box-shadow: 7px 10px 50px #c5c5c5;
+          box-shadow: 7px 10px 50px #c5c5c5;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.img-wrapper img {
+  border-radius: 4px;
+}
+
+.section-title.text-center::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.section-title.text-center::after {
+  background: #fff;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #0b4796;
+  width: 50px;
+}
+
+.carousel-dimensions {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel-inner > .carousel-item > img {
+  margin: auto;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
