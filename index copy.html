@@ -28,17 +28,20 @@
 
 <body>
   <!-- header -->
-  <header>
+  <header id="home">
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">He</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-css nav-menu fixed-top">
+      <a class="navbar-brand" href="#home">He</a>
+      <button class="navbar-toggler nav-button button-nav-css" type="button" data-toggle="collapse"
+        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="bg-dark line1"></div>
+        <div class="bg-dark line2"></div>
+        <div class="bg-dark line3"></div>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
-          <a class="nav-link active" href="#">Início</a>
+          <a class="nav-link active" href="#home">Início</a>
           <a class="nav-link" href="#services">Serviços</a>
           <a class="nav-link" href="#about">Sobre mim</a>
           <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -47,39 +50,314 @@
       </div>
     </nav>
     <!-- end of navigation -->
+    <!-- banner -->
+    <div class="text-left banner">
+      <h1 class="font-weight-bold">Sou a Helena,</h1>
+      <p>e minha missão é facilitar a auto-superação</p>
+      <a href="#portfolio"><button class="buttons-css ">Portfólio</button></a>
+    </div>
+    <!-- end of banner -->
   </header>
   <!-- end of header -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="./java_script/script.js"></script>
+  <!-- services -->
+  <section id="services" class="site-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 ">Meus serviços</h2>
+      <div class="row">
+        <div class="col-sm-6 mb-4">
+          <div class="services-card ">
+            <div class="card-logo"><object type="image/svg+xml" data="./media_content/icons/book.svg">
+                Kiwi Logo
+                <!-- fallback image in CSS -->
+              </object></div>
+            <div>
+              <h3 class="service-title">Lorem ipsum 1
+              </h3>
+              <p>Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dicta veritatis modi vitae et laudantium
+                earum dignissimos aspernatur eos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="services-card">
+            <div class="card-logo"><object type="image/svg+xml" data="./media_content/icons/circle.svg">
+                Kiwi Logo
+                <!-- fallback image in CSS -->
+              </object></div>
+            <div>
+              <h3 class="service-title">Lorem ipsum 2
+              </h3>
+              <p>Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dicta veritatis modi vitae et laudantium
+                earum dignissimos aspernatur eos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="services-card">
+            <div class="card-logo">
+              <object type="image/svg+xml" data="./media_content/icons/speech.svg">
+                Kiwi Logo
+                <!-- fallback image in CSS -->
+              </object></div>
+            <div>
+              <h3 class="service-title">Lorem ipsum 4
+              </h3>
+              <p>Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dicta veritatis modi vitae et laudantium
+                earum dignissimos aspernatur eos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="services-card">
+            <div class="card-logo"><object type="image/svg+xml" data="./media_content/icons/constellation.svg">
+                Kiwi Logo
+                <!-- fallback image in CSS -->
+              </object></div>
+            <div>
+              <h3 class="service-title">Lorem ipsum 3
+              </h3>
+              <p>Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dicta veritatis modi vitae et laudantium
+                earum dignissimos aspernatur eos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of services -->
+  <!-- about me -->
+  <section class="site-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4 pb-3">
+          <h2 class="section-title text-left">Sobre mim</h1>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-1 mt-4">
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, consectetur ullam. Iure eveniet
+            explicabo quia delectus reiciendis pariatur sed repellendus!</p>
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, consectetur ullam. Iure eveniet
+            explicabo quia delectus reiciendis pariatur sed repellendus!</p>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 mt-4">
+          <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="woman-smiling" class="img-fluid">
+        </div>
+        <div class="col-lg-4 order-3 order-lg-3  mt-4">
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, consectetur ullam. Iure eveniet
+            explicabo quia delectus reiciendis pariatur sed repellendus!</p>
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, consectetur ullam. Iure eveniet
+            explicabo quia delectus reiciendis pariatur sed repellendus!</p>
+          <a href="#contact"><button class="buttons-css">Meu contato</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about me -->
+  <!-- portfolio -->
+  <section id="portfolio" class="site-section">
+    <!-- cards -->
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Meu portfólio</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4 img-border mb-4">
+          <!-- insert link with endpoint in testimonial -->
+          <a href="https://google.com" class="portfolio-card">
+            <img src="/media_content/images/portfolio-pictures/pexels-eberhard-grossgasteiger-2437286.jpg"
+              alt="portfolio1" class="img-fluid">
+            <!-- fix font size in sm screens using media query -->
+            <p class="centered-content text-center">constelação familiar</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4 img-border mb-4">
+          <a href="https://google.com" class="portfolio-card">
+            <img src="/media_content/images/portfolio-pictures/pexels-eberhard-grossgasteiger-2437286.jpg"
+              alt="portfolio2" class="img-fluid">
+            <!-- fix font size in sm screens using media query -->
+            <p class="centered-content text-center">círculo de mulheres</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4 img-border mb-4">
+          <a href="https://google.com" class="portfolio-card"> <img
+              src="/media_content/images/portfolio-pictures/pexels-eberhard-grossgasteiger-2437286.jpg" alt="portfolio3"
+              class="img-fluid">
+            <!-- fix font size in sm screens using media query -->
+            <p class="centered-content text-center">reforço cognitivo</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of cards -->
+  <!-- carousel -->
+  <section class="site-section">
+    <div class="container-fluid testimonials-background">
+      <!-- style="background-color: #072F63;" -->
+      <div class="row">
+        <div class="col-12 ">
+          <h2 class="section-title testimonials-title text-center">Depoimentos</h2>
+          <!-- mt-5" style="color: white;" -->
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto">
+        <div class="carousel slide" data-ride="carousel" id="carouselReviews">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselReviews" data-slide-to="1"></li>
+            <li data-target="#carouselReviews" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="customer1"
+                class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
+              <blockquote class="blockquote text-center text-white">
+                <!-- style="color: white;" -->
+                <p class="mb-3">Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. At ipsam facilis quia non
+                  blanditiis
+                  placeat quasi ut dignissimos natus! Obcaecati?</p>
+                <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
+                <!-- style="color: white;" -->
+              </blockquote>
+              <ul class="list-inline pb-5">
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="customer1"
+                class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
+              <blockquote class="blockquote text-center text-white">
+                <!-- style="color: white;" -->
+                <p class="mb-3">Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. At ipsam facilis quia non
+                  blanditiis
+                  placeat quasi ut dignissimos natus! Obcaecati?</p>
+                <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
+                <!-- style="color: white;" -->
+              </blockquote>
+              <ul class="list-inline pb-5">
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="customer1"
+                class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
+              <blockquote class="blockquote text-center text-white">
+                <!-- style="color: white;" -->
+                <p class="mb-3">Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. At ipsam facilis quia non
+                  blanditiis
+                  placeat quasi ut dignissimos natus! Obcaecati?</p>
+                <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
+                <!-- style="color: white;" -->
+              </blockquote>
+              <ul class="list-inline pb-5">
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of carousel -->
+  <!-- end of portfolio -->
+  <!-- contact -->
+  <section id="contact" class="site-section">
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-6">
+          <h3 class="contact-title mb-5 pt-5 pr-3 mr-3">Me envie uma <br>
+            mensagem</h3>
+            <!-- style="font-size: 3rem; -->
+        </div>
+        <div class="col-sm-6">
+          <div class="row ">
+            <div class="col-lg-6 text-left ">
+              <!-- pt-5 font-weight-bold -->
+              <p class="text-muted">Me envie uma mensagem</p>
+              <a href="https://google.com">ramdonemail@email.com</a>
+            </div>
+            <div class="col-lg-6 text-left ">
+              <!-- pt-5 font-weight-bold -->
+              <p class="text-muted">Meu endereço </p>
+              <a href="https://goo.gl/maps/YMoxPuDVBJfYaEv58">5th Avenue, NY</a>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-12 text-left">
+              <!-- pt-5 pb-5 font-weight-bold -->
+              <p class="text-muted">Meu número </p>
+              <a href="https://goo.gl/maps/YMoxPuDVBJfYaEv58">+55 31 99598-7470</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="./java_script/script.js"></script>
 </body>
 
 </html>

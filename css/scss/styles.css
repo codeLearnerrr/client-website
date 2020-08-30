@@ -14,6 +14,30 @@ nav a {
   font-weight: 700;
 }
 
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
 ::-moz-selection {
   background: #000;
   color: #fff;
@@ -56,7 +80,22 @@ body:after {
   padding: 5em 0;
 }
 
-.btns {
+.navbar-css:hover {
+  background: #fff;
+}
+
+.button-nav-css {
+  outline: none;
+  border: none;
+}
+
+.button-nav-css:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.buttons-css {
   background-color: #0b4796;
   border-color: #0b4796;
   color: #fff;
@@ -67,14 +106,18 @@ body:after {
   border: 1px solid transparent;
 }
 
-.btns:hover {
+.buttons-css:hover {
   background-color: #000;
 }
 
-.btns:focus {
+.buttons-css:focus {
   outline: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.banner p {
+  font-size: 1.25rem;
 }
 
 .section-title {
@@ -95,6 +138,13 @@ body:after {
           box-shadow: 2px 5px 15px #c8cecf;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
 }
 
 .services-card:hover {
@@ -104,7 +154,14 @@ body:after {
           transform: translateY(-10px);
 }
 
-.centered {
+.services-card .card-logo {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-right: 1.5rem;
+}
+
+.centered-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,8 +171,31 @@ body:after {
   font-weight: 700;
 }
 
-.img-wrapper img {
+.img-border img {
   border-radius: 4px;
+}
+
+.portfolio-card {
+  text-align: center;
+  display: table;
+  background-color: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+.portfolio-card:hover img {
+  opacity: 0.5;
+}
+
+.portfolio-card:hover p {
+  color: #fff;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+
+.portfolio-card p {
+  color: transparent;
 }
 
 .section-title.text-center::after {
@@ -126,6 +206,15 @@ body:after {
 
 .section-title.text-center::after {
   background: #fff;
+}
+
+.testimonials-title {
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.testimonials-background {
+  background-color: #072f63;
 }
 
 .section-title::after {
@@ -151,6 +240,12 @@ body:after {
   border-radius: 50%;
   width: 9px;
   height: 9px;
+}
+
+.contact-title {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 #map {
