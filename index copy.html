@@ -175,7 +175,6 @@
           <a href="https://google.com" class="portfolio-card">
             <img src="/media_content/images/portfolio-pictures/pexels-eberhard-grossgasteiger-2437286.jpg"
               alt="portfolio1" class="img-fluid">
-            <!-- fix font size in sm screens using media query -->
             <p class="centered-content text-center">constelação familiar</p>
           </a>
         </div>
@@ -183,15 +182,13 @@
           <a href="https://google.com" class="portfolio-card">
             <img src="/media_content/images/portfolio-pictures/pexels-eberhard-grossgasteiger-2437286.jpg"
               alt="portfolio2" class="img-fluid">
-            <!-- fix font size in sm screens using media query -->
             <p class="centered-content text-center">círculo de mulheres</p>
           </a>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 img-border mb-4">
-          <a href="https://google.com" class="portfolio-card"> <img
+          <a class="portfolio-card"> <img
               src="/media_content/images/portfolio-pictures/pexels-eberhard-grossgasteiger-2437286.jpg" alt="portfolio3"
               class="img-fluid">
-            <!-- fix font size in sm screens using media query -->
             <p class="centered-content text-center">reforço cognitivo</p>
           </a>
         </div>
@@ -202,11 +199,9 @@
   <!-- carousel -->
   <section class="site-section">
     <div class="container-fluid testimonials-background">
-      <!-- style="background-color: #072F63;" -->
       <div class="row">
         <div class="col-12 ">
           <h2 class="section-title testimonials-title text-center">Depoimentos</h2>
-          <!-- mt-5" style="color: white;" -->
         </div>
       </div>
       <div class="col-md-6 mx-auto">
@@ -221,13 +216,11 @@
               <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="customer1"
                 class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
               <blockquote class="blockquote text-center text-white">
-                <!-- style="color: white;" -->
                 <p class="mb-3">Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit. At ipsam facilis quia non
                   blanditiis
                   placeat quasi ut dignissimos natus! Obcaecati?</p>
                 <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
-                <!-- style="color: white;" -->
               </blockquote>
               <ul class="list-inline pb-5">
                 <li class="list-inline-item">
@@ -251,13 +244,11 @@
               <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="customer1"
                 class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
               <blockquote class="blockquote text-center text-white">
-                <!-- style="color: white;" -->
                 <p class="mb-3">Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit. At ipsam facilis quia non
                   blanditiis
                   placeat quasi ut dignissimos natus! Obcaecati?</p>
                 <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
-                <!-- style="color: white;" -->
               </blockquote>
               <ul class="list-inline pb-5">
                 <li class="list-inline-item">
@@ -281,13 +272,11 @@
               <img src="./media_content/images/pexels-andrea-piacquadio-oneratio.jpg" alt="customer1"
                 class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
               <blockquote class="blockquote text-center text-white">
-                <!-- style="color: white;" -->
                 <p class="mb-3">Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit. At ipsam facilis quia non
                   blanditiis
                   placeat quasi ut dignissimos natus! Obcaecati?</p>
                 <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
-                <!-- style="color: white;" -->
               </blockquote>
               <ul class="list-inline pb-5">
                 <li class="list-inline-item">
@@ -319,34 +308,50 @@
     <div class="container">
       <div class="row ">
         <div class="col-sm-6">
-          <h3 class="contact-title mb-5 pt-5 pr-3 mr-3">Me envie uma <br>
+          <h3 class="contact-title">Me envie uma <br>
             mensagem</h3>
-            <!-- style="font-size: 3rem; -->
         </div>
         <div class="col-sm-6">
           <div class="row ">
-            <div class="col-lg-6 text-left ">
-              <!-- pt-5 font-weight-bold -->
-              <p class="text-muted">Me envie uma mensagem</p>
-              <a href="https://google.com">ramdonemail@email.com</a>
+            <div class="col-lg-6 contact-subtitle">
+              <p class="text-muted">Me envie um e-mail <i class="far fa-envelope"></i></p>
+              <a href="https://google.com" class="font-weight-bold">ramdonemail@email.com</a>
             </div>
-            <div class="col-lg-6 text-left ">
-              <!-- pt-5 font-weight-bold -->
-              <p class="text-muted">Meu endereço </p>
-              <a href="https://goo.gl/maps/YMoxPuDVBJfYaEv58">5th Avenue, NY</a>
+            <div class="col-lg-6 contact-subtitle">
+              <p class="text-muted">Meu Instagram <i class="fab fa-instagram"></i></p>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/instagram">@eloisadiniz</a>
             </div>
           </div>
           <div class="row ">
-            <div class="col-lg-12 text-left">
-              <!-- pt-5 pb-5 font-weight-bold -->
-              <p class="text-muted">Meu número </p>
-              <a href="https://goo.gl/maps/YMoxPuDVBJfYaEv58">+55 31 99598-7470</a>
+            <div class="col-lg-12 contact-subtitle pb-5">
+              <p class="text-muted">Meu contato <i class="fab fa-whatsapp"></i> </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5531983337227">+55 31 99598-7470</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+    <div class="container">
+      <div class="row">
+        <div id="map"></div>
+      </div>
+    </div>
+    </section>
+    <!-- end of contact -->
+ <!-- footer -->
+ <footer id="footer-end">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12 mt-4">
+        <p>Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved | Website created by <a
+            target="_blank" rel="noopener noreferrer" href="https://github.com/codeLearnerrr">Code
+            Learnerrr</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end of footer -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -358,6 +363,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"></script>
     <script src="./java_script/script.js"></script>
+    <script src="./java_script/test.js"></script>
 </body>
 
 </html>

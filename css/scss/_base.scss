@@ -109,6 +109,7 @@ body {
 }
 .banner p {
   font-size: $font-size-base * 1.25;
+  color: $black;
 }
 .section-title {
   position: relative;
@@ -167,6 +168,11 @@ body {
   p {
     color: transparent;
   }
+  @media only screen and(max-width: 419px) {
+    p {
+      font-size: $font-size-base * 1.3;
+    }
+  }
 }
 
 .section-title.text-center::after {
@@ -209,11 +215,27 @@ body {
   width: 9px;
   height: 9px;
 }
-.contact-title{
+.contact-title {
   text-align: left;
-  font-size: 3rem;
-  font-weight: 800;;
-  // mb-5 text-left pt-5 pr-3 mr-3 font-weight-bolder" style="font-size: 3rem;
+  font-size: $font-size-base * 3;
+  font-weight: $font-weight;
+  padding-top: 3rem;
+  padding-right: 1rem;
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+}
+@media only screen and (max-width: 766px) {
+  .contact-title {
+    font-size: $font-size-base * 2.5;
+  }
+}
+.contact-subtitle {
+  text-align: left;
+  padding-top: 3rem;
+  font-weight: 700;
+}
+#footer-end {
+  background: rgb(241, 241, 241);
 }
 #map {
   width: 100%;
