@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 //variables
 $black: #000;
@@ -15,8 +16,33 @@ body {
   font-weight: 400;
   font-size: $font-size-base;
 }
+
+header {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../../media_content/images/pexels-daniel-xavier-1102343.jpg) center
+      no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.banner {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
 nav a {
   font-weight: $font-weight;
+}
+
+.custom-navbar {
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  box-shadow: 5px 2px 15px #444;
+  color: black;
 }
 
 .line1,

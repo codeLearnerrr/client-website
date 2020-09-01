@@ -1,6 +1,7 @@
 /* base */
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,8 +11,30 @@ body {
   font-size: 1rem;
 }
 
+header {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../../media_content/images/pexels-daniel-xavier-1102343.jpg) center no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../media_content/images/pexels-daniel-xavier-1102343.jpg) center no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.banner {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
 nav a {
   font-weight: 700;
+}
+
+.custom-navbar {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background: linear-gradient(white, white);
+  -webkit-box-shadow: 5px 2px 15px #444;
+          box-shadow: 5px 2px 15px #444;
+  color: black;
 }
 
 .line1,
