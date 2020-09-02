@@ -1,7 +1,3 @@
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
 //variables
 $black: #000;
 $blue: #0b4796;
@@ -10,29 +6,133 @@ $font-size-base: 1rem !default; //assumes the browser default, 16px
 $font-section-title: $font-size-base * 1.2;
 $font-family-2: "Montserrat", sans-serif;
 $font-weight: 700;
+// end of variables
+
+// general styling
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.7;
   color: lighten($black, 40%);
   font-weight: 400;
   font-size: $font-size-base;
+  &:after {
+    transition: 0.3s all ease-in-out;
+  }
 }
 
+::-moz-selection {
+  background: $black;
+  color: $white;
+}
+
+::selection {
+  background: $black;
+  color: $white;
+}
+
+a {
+  transition: 0.3s all ease;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,h2,h3,h4,h5,
+.h1,.h2,.h3,.h4,.h5 {
+  font-family: $font-family-2;
+  color: $black;
+}
+
+.site-section {
+  padding: 5em 0;
+}
+
+.navbar-css {
+  &:hover {
+    background: $white;
+  }
+}
+
+.button-nav-css {
+  outline: none;
+  border: none;
+  &:focus {
+    outline: none;
+    box-shadow: none !important;
+  }
+}
+
+.buttons-css {
+  background-color: $blue;
+  border-color: $blue;
+  color: $white;
+  font-size: $font-size-base;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: $black;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none !important;
+  }
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: $font-size-base * 2;
+  font-weight: 700;
+}
+
+.section-title.text-center::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.section-title.text-center::after {
+  background: #fff;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #0b4796;
+  width: 50px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #0b4796;
+  width: 50px;
+}
+// end of general styling
+
+//navbar
 header {
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url(../../media_content/images/pexels-daniel-xavier-1102343.jpg) center
+    url(../../media_content/images/home.jpg) center
       no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.banner {
-  position: absolute;
-  top: 40%;
-  left: 15%;
 }
 
 nav a {
@@ -65,90 +165,27 @@ nav a {
 .change .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-::-moz-selection {
-  background: $black;
-  color: $white;
-}
+// end of navbar
 
-::selection {
-  background: $black;
-  color: $white;
+// banner in header/home page
+.banner {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  p {
+    font-size: $font-size-base * 1.25;
+    color: $black;
+  }
 }
+// end of banner
 
-a {
-  transition: 0.3s all ease;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-  font-family: $font-family-2;
-  color: $black;
-}
-body {
-  &:after {
-    transition: 0.3s all ease-in-out;
-  }
-}
-.site-section {
-  padding: 5em 0;
-}
-.navbar-css {
-  &:hover {
-    background: $white;
-  }
-}
-.button-nav-css {
-  outline: none;
-  border: none;
-  &:focus {
-    outline: none;
-    box-shadow: none !important;
-  }
-}
-.buttons-css {
-  background-color: $blue;
-  border-color: $blue;
-  color: $white;
-  font-size: $font-size-base;
-  font-weight: 400;
-  border-radius: 30px;
-  padding: 10px 30px;
-  border: 1px solid transparent;
-  &:hover {
-    background-color: $black;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: none !important;
-  }
-}
-.banner p {
-  font-size: $font-size-base * 1.25;
-  color: $black;
-}
-.section-title {
-  position: relative;
-  padding-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
+// service
 .service-title {
   margin-bottom: 10px;
   font-size: $font-size-base * 1.2;
   font-weight: 650;
 }
+
 .services-card {
   box-shadow: 2px 5px 15px #c8cecf;
   transition: all 0.5s ease-in-out;
@@ -177,7 +214,9 @@ body {
 .img-border img {
   border-radius: 4px;
 }
+// end of service
 
+// portfolio
 .portfolio-card {
   text-align: center;
   display: table;
@@ -199,18 +238,15 @@ body {
       font-size: $font-size-base * 1.3;
     }
   }
+  @media only screen and(max-width: 992px) {
+    p {
+      color: $white;
+    }
+  }
 }
+// end of portfolio
 
-.section-title.text-center::after {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.section-title.text-center::after {
-  background: #fff;
-}
+// testimonials
 .testimonials-title {
   color: $white;
   margin-top: 3rem;
@@ -219,15 +255,7 @@ body {
 .testimonials-background {
   background-color: #072f63;
 }
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background: #0b4796;
-  width: 50px;
-}
+
 .carousel-dimensions {
   width: 150px;
   height: 150px;
@@ -241,14 +269,15 @@ body {
   width: 9px;
   height: 9px;
 }
+//end of testimonials
+
+// contact section
 .contact-title {
   text-align: left;
   font-size: $font-size-base * 3;
   font-weight: $font-weight;
-  padding-top: 3rem;
-  padding-right: 1rem;
-  margin-bottom: 3rem;
-  margin-right: 1rem;
+  padding: 3rem 1rem 0 0;
+  margin: 0 1rem 3rem 0;
 }
 @media only screen and (max-width: 766px) {
   .contact-title {
@@ -260,12 +289,19 @@ body {
   padding-top: 3rem;
   font-weight: 700;
 }
+// end of contact
+
+// footer
 #footer-end {
   background: rgb(241, 241, 241);
 }
+// end of footer
+
+// maps api inside contact
 #map {
   width: 100%;
   height: 400px;
   background-color: grey;
   border-radius: 10px;
 }
+// end of maps api

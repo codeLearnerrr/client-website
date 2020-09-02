@@ -11,54 +11,9 @@ body {
   font-size: 1rem;
 }
 
-header {
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../../media_content/images/pexels-daniel-xavier-1102343.jpg) center no-repeat;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../media_content/images/pexels-daniel-xavier-1102343.jpg) center no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.banner {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-}
-
-nav a {
-  font-weight: 700;
-}
-
-.custom-navbar {
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: linear-gradient(white, white);
-  -webkit-box-shadow: 5px 2px 15px #444;
-          box-shadow: 5px 2px 15px #444;
-  color: black;
-}
-
-.line1,
-.line2,
-.line3 {
-  width: 23px;
-  height: 3px;
-  margin: 5px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.change .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.change .line2 {
-  opacity: 0;
-}
-
-.change .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+body:after {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 ::-moz-selection {
@@ -80,23 +35,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
   font-family: "Montserrat", sans-serif;
   color: #000;
-}
-
-body:after {
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
 }
 
 .site-section {
@@ -139,16 +81,96 @@ body:after {
           box-shadow: none !important;
 }
 
-.banner p {
-  font-size: 1.25rem;
-  color: #000;
-}
-
 .section-title {
   position: relative;
   padding-bottom: 20px;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.section-title.text-center::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.section-title.text-center::after {
+  background: #fff;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #0b4796;
+  width: 50px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #0b4796;
+  width: 50px;
+}
+
+header {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../../media_content/images/home.jpg) center no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../media_content/images/home.jpg) center no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+nav a {
+  font-weight: 700;
+}
+
+.custom-navbar {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background: linear-gradient(white, white);
+  -webkit-box-shadow: 5px 2px 15px #444;
+          box-shadow: 5px 2px 15px #444;
+  color: black;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.banner {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  color: #000;
 }
 
 .service-title {
@@ -228,14 +250,10 @@ body:after {
   }
 }
 
-.section-title.text-center::after {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.section-title.text-center::after {
-  background: #fff;
+@media only screen and (max-width: 992px) {
+  .portfolio-card p {
+    color: #fff;
+  }
 }
 
 .testimonials-title {
@@ -245,16 +263,6 @@ body:after {
 
 .testimonials-background {
   background-color: #072f63;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background: #0b4796;
-  width: 50px;
 }
 
 .carousel-dimensions {
@@ -276,10 +284,8 @@ body:after {
   text-align: left;
   font-size: 3rem;
   font-weight: 700;
-  padding-top: 3rem;
-  padding-right: 1rem;
-  margin-bottom: 3rem;
-  margin-right: 1rem;
+  padding: 3rem 1rem 0 0;
+  margin: 0 1rem 3rem 0;
 }
 
 @media only screen and (max-width: 766px) {
