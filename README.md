@@ -4,4 +4,4 @@ This website is from a client, and i was allowed to post it here. Bootstrap was 
 
 ## Goal
 
-She wants to have a digital presence and generate more leads, through her website combined with other midias such as instagram and facebook. Nowadays, her clientes get to know her through someone's recommendation and not from any other social circle. So, it's expected an increase of about 30% more clients within the next months. 
+She wants to have a digital presence and generate more leads, through her website combined with other midias such as instagram and facebook. Nowadays, her clientes get to know her through some close friend recommendation or previous clients and not from any other social circle. So, it's expected an increase of about 30% more clients within the next months. 
