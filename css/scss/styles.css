@@ -162,6 +162,14 @@ nav a {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media screen and (max-width: 992px) {
+  .navbar-modifications {
+    height: 100vh;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}
+
 .banner {
   position: absolute;
   top: 40%;
