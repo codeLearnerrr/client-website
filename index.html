@@ -20,6 +20,14 @@
   <!-- css scss-->
   <link rel="stylesheet" href="css/scss/styles.css">
 
+  <!-- maps api -->
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFuu3ziw5Ow4QI8ASz4s0TyktPpv3kI4I&callback=initMap">
+    </script>
+
+  <!-- maps js -->
+  <script src="./java_script/mapsapi.js"></script>
+
   <title>Eloisa Diniz</title>
 </head>
 
@@ -31,7 +39,7 @@
       <a class="navbar-brand" href="#home">ED</a>
       <button class="navbar-toggler nav-button button-nav-css" type="button" data-toggle="collapse"
         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="Toggle navigation" id="nav-button-hamburger" >
         <div class="bg-dark line1"></div>
         <div class="bg-dark line2"></div>
         <div class="bg-dark line3"></div>
@@ -98,7 +106,7 @@
                 <p class="warning">Seu navegador não suporta ícones SVG</p>
               </object></div>
             <div>
-              <h3 class="service-title">Palestras 
+              <h3 class="service-title">Palestras
               </h3>
               <p>Lorem, ipsum dolor sit amet consectetur
                 adipisicing elit. Dicta veritatis modi vitae et laudantium
@@ -134,15 +142,20 @@
           <h2 class="section-title text-left">Sobre mim</h1>
         </div>
         <div class="col-lg-4 order-2 order-lg-1 mt-4">
-          <p>Trabalho como Psicopedagoga, desde 2016, pós-graduada em Psicopedagogia pela Universidade FUMEC; Graduada em Secreatariado Executivo e Bilíngue pela Faculdade Newton Paiva.</p>
-          <p>A Psicopedagogia, foi motivada pelos desafios e a necessidade de buscar conhecimentos para melhor realizar o trabalho voluntário feito desde 2007 em um instituto não-escolar. O que tornou-se um motivo para abrir mais um leque profissional.</p>
+          <p>Trabalho como Psicopedagoga, desde 2016, pós-graduada em Psicopedagogia pela Universidade FUMEC; Graduada
+            em Secreatariado Executivo e Bilíngue pela Faculdade Newton Paiva.</p>
+          <p>A Psicopedagogia, foi motivada pelos desafios e a necessidade de buscar conhecimentos para melhor realizar
+            o trabalho voluntário feito desde 2007 em um instituto não-escolar. O que tornou-se um motivo para abrir
+            mais um leque profissional.</p>
         </div>
         <div class="col-lg-4 order-1 order-lg-2 mt-4">
           <img src="./media_content/images/about.jpg" alt="woman-smiling" class="img-fluid">
         </div>
         <div class="col-lg-4 order-3 order-lg-3  mt-4">
-          <p>Para isso, busquei uma boa formação com profissionais qualificados e escolas que poderiam me auxiliar: Espaço Vida e o Instituto Ipê Amarelo. </p>
-          <p>Hoje, realizo atendimento de avaliação de Perfil Cognitivo e Treinamento em funções Executivas. Orientação aos pais e cuidadores, Abordagem Sistêmica, Constelação Familiar e Círculo de Mulheres.</p>
+          <p>Para isso, busquei uma boa formação com profissionais qualificados e escolas que poderiam me auxiliar:
+            Espaço Vida e o Instituto Ipê Amarelo. </p>
+          <p>Hoje, realizo atendimento de avaliação de Perfil Cognitivo e Treinamento em funções Executivas. Orientação
+            aos pais e cuidadores, Abordagem Sistêmica, Constelação Familiar e Círculo de Mulheres.</p>
           <a href="#contact"><button class="buttons-css">Meu contato</button></a>
         </div>
       </div>
@@ -338,11 +351,9 @@
   <!-- jQuery first, then Bootstrap JS, then Google Maps API-->
   <script src="./java_script/jquery/jquery-3.5.1.min.js"></script>
   <script src="./java_script/bootstrap/bootstrap.min.js"></script>
-  <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFuu3ziw5Ow4QI8ASz4s0TyktPpv3kI4I&callback=initMap">
-    </script>
-  <!-- jquery and api code -->
+  <!-- jquery code -->
   <script src="./java_script/script.js"></script>
+
 </body>
 
 </html>
