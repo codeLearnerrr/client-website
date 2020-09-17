@@ -2,15 +2,15 @@
 <html lang="pt-BR">
 
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=RAMDON-KEY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=RAMDON-KEY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'RAMDON-KEY');
-</script>
+    gtag('config', 'RAMDON-KEY');
+  </script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,13 +31,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <!-- css scss-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/scss/styles.css">
 
-<!-- maps api -->
-<script defer
-src="https://maps.googleapis.com/maps/api/js?key=RAMDOM_KEY&callback=initMap">
-</script>
-  
+  <!-- maps api -->
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=RAMDOM_KEY&callback=initMap">
+  </script>
+
 
   <!-- maps js -->
   <script src="./java_script/mapsapi.js"></script>
@@ -161,9 +160,9 @@ src="https://maps.googleapis.com/maps/api/js?key=RAMDOM_KEY&callback=initMap">
             o trabalho voluntário feito desde 2007 em um instituto não-escolar. O que tornou-se um motivo para abrir
             mais um leque profissional.</p>
         </div>
-        <div class="col-lg-4 order-1 order-lg-2 mt-4">
-          <img src="./media_content/images/about.jpg" alt="mulher consteladora sorridente posando para foto"
-            class="img-fluid">
+        <div class="col-lg-4 order-1 order-lg-2 mt-4" id="about-image-align">
+          <img src="./media_content/images/eloisa_entrada_planB-min.jpg"
+            alt="mulher consteladora sorridente posando para foto" class="img-fluid">
         </div>
         <div class="col-lg-4 order-3 order-lg-3  mt-4">
           <p>Para isso, busquei uma boa formação com profissionais qualificados e escolas que poderiam me auxiliar:
@@ -224,14 +223,13 @@ src="https://maps.googleapis.com/maps/api/js?key=RAMDOM_KEY&callback=initMap">
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active text-center">
-              <img src="./media_content/images/about.jpg" alt="primeiro depoimento"
+              <img src="./media_content/images/testimonials/si_pimentel.jpeg" alt="primeiro depoimento"
                 class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
               <blockquote class="blockquote text-center text-white">
-                <p class="mb-3">Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. At ipsam facilis quia non
-                  blanditiis
-                  placeat quasi ut dignissimos natus! Obcaecati?</p>
-                <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
+                <p class="mb-3">Ao me abrir para o auto conhecimento, algumas pessoas foram surgindo em minha vida.
+                  Durante a pandemia me deparei com um período complicado, profissionalmente e ao ser atendida pela
+                  consteladora sistêmica, Eloisa Helena, foi incrível.</p>
+                <footer class="blockquote-footer text-white mb-2">Sil Pimentel</footer>
               </blockquote>
               <ul class="list-inline pb-5">
                 <li class="list-inline-item">
@@ -252,14 +250,13 @@ src="https://maps.googleapis.com/maps/api/js?key=RAMDOM_KEY&callback=initMap">
               </ul>
             </div>
             <div class="carousel-item text-center">
-              <img src="./media_content/images/about.jpg" alt="segundo depoimento"
+              <img src="./media_content/images/testimonials/wagner_tafuri.jpeg" alt="segundo depoimento"
                 class="d-block rounded-circle mb-5 mt-5 carousel-dimensions">
               <blockquote class="blockquote text-center text-white">
-                <p class="mb-3">Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. At ipsam facilis quia non
-                  blanditiis
-                  placeat quasi ut dignissimos natus! Obcaecati?</p>
-                <footer class="blockquote-footer text-white mb-2">Jessica Whitestone</footer>
+                <p class="mb-3">Tenho um filho pré-adolescente com transtorno opositor desafiador e sei da importância
+                  da inserção social das crianças que precisam de ajuda para a integração social. A Eloisa foi uma              benção para a nossa família, onde ela com muita paciência e profissionalismo, fez um trabalho
+                  psicopedagógico muito bom e satisfatório. Só tenho a agradecer.</p>
+                <footer class="blockquote-footer text-white mb-2">Wagner Tafuri</footer>
               </blockquote>
               <ul class="list-inline pb-5">
                 <li class="list-inline-item">
@@ -355,10 +352,10 @@ src="https://maps.googleapis.com/maps/api/js?key=RAMDOM_KEY&callback=initMap">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 mt-4">
-          <p class="text-center">Copyright &copy; <span id="yearScript"></span> All rights reserved | Website created by <a target="_blank"
-            rel="noopener noreferrer" href="https://github.com/codeLearnerrr">Code
-            Learnerrr</a> and Pictures by <a target="_blank"
-            rel="noopener noreferrer" href="https://www.instagram.com/crisoya/">@crisoya</a></p>
+          <p class="text-center">Copyright &copy; <span id="yearScript"></span> All rights reserved | Website created by
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/codeLearnerrr">Code
+              Learnerrr</a> and Pictures by <a target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/crisoya/">@crisoya</a></p>
         </div>
       </div>
     </div>
