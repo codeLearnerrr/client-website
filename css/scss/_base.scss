@@ -207,6 +207,16 @@ nav a {
     color: $black;
   }
 }
+.banner-404 {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+
+  h1, p {
+    font-size: $font-size-base * 4;
+    color: $black;
+  }
+}
 // end of banner
 
 // service

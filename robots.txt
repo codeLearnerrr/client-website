@@ -1,0 +1,3 @@
+user-agent: *
+allow: /
+Sitemap: https://eloisadiniz.com/sitemap.xml
